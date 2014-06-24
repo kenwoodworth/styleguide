@@ -142,8 +142,10 @@
         </div>
         <div class="sg-element">
           <h4 class="sg-element-title">Field / Value</h4>
-          <p><strong class="field-label">Label:</strong> <span class="field-value">Value</span></p>
-          <p><strong class="field-label">Label:</strong> <span class="field-value">Value 1</span>, <span class="field-value">Value 2</span>, <span class="field-value">Value 3</span></p>
+          <h4 class="field-label">Label:</h4>
+          <div class="field-value">Value</div>
+          <h4 class="field-label">Label:</h4>
+          <div><span class="field-value">Value 1</span>, <span class="field-value">Value 2</span>, <span class="field-value">Value 3</span></div>
         </div>
       </article>
     </section>
@@ -176,10 +178,12 @@
         </header>
         <div class="sg-element">
           <h4 class="sg-element-title">Image with Caption</h4>
-          <div class="image">
+          <figure>
             <img src="http://placehold.it/420x300/e5e5e5/999999">
-            <p class="caption">Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-          </div>
+            <figcaption>
+              <p class="caption">Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+            </figcaption>
+          </figure>
         </div>
       </article>
     </section>
