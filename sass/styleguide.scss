@@ -8,62 +8,65 @@
 @import "compass";
 @import "breakpoint";
 
-$ff-styleguide: "Helvetica Neue", Arial, Helvetica, sans-serif;
+$ff-sg: "Helvetica Neue", Arial, Helvetica, sans-serif;
 
 //  Typography
 
-body.styleguide {
+body.sg {
   background: $white;
-  .l--constrained {
-    // background: $white;
-    padding-bottom: rhythm(10);
-    padding-top: rhythm(10);
-  }
 }
 
-h1.styleguide,
-h2.styleguide,
-h3.styleguide,
-h4.styleguide,
-h5.styleguide,
-h6.styleguide {
+.sg--constrained {
+  padding-bottom: rhythm(10);
+  padding-top: rhythm(10);
+  max-width: 1200px;
+  width: 94%;
+  margin: 0 auto;
+}
+
+h1.sg-title,
+h2.sg-section-title,
+h3.sg-item-title,
+h4.sg,
+h5.sg,
+h6.sg {
   color: $gray-dark;
-  font-family: $ff-styleguide;
+  font-family: $ff-sg;
   margin-top: 0;
 }
 
-h1.styleguide {
+h1.sg-title {
   @include adjust-font-size-to($fs-h1);
   color: $gray-darker;
   margin: 0 rhythm(5, $fs-h1) rhythm(10, $fs-h1);
 }
 
-h2.styleguide {
+.sg-section-title {
   @include adjust-font-size-to($fs-h2);
   background: $gray-white;
   margin-bottom: 0;
   padding: rhythm(2.5, $fs-h2) rhythm(5, $fs-h2);
 }
 
-h3.styleguide {
+.sg-item-title {
   @include adjust-font-size-to($fs-h3);
   @include adjust-font-size-to($fs-m);
   margin-bottom: rhythm(5, $fs-m);
   text-transform: uppercase;
 }
 
-section.styleguide {
+.sg-section {
   border-top: 1px solid $gray;
   clear: both;
 }
 
-article.styleguide {
+.sg-item {
   @include clearfix;
   clear: both;
   padding: rhythm(5);
   @include breakpoint(800px, $no-query: '.lt-ie9') {
     padding-left: 200px;
-    > header.styleguide {
+    > header.sg-item-header {
       float: left;
       margin-left: -200px;
       padding-left: rhythm(5);
@@ -71,32 +74,39 @@ article.styleguide {
   }
 }
 
-div.styleguide-color {
+.sg-palette {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.sg-color {
   float: left;
   margin-bottom: rhythm(8);
   height: 100px;
   width: 100px;
   position: relative;
   > strong {
-    @include adjust-font-size-to($fs-s, 3);
+    @include adjust-font-size-to($fs-xs, 3);
     color: $gray-dark;
     font-weight: bold;
+    font-family: $ff-sg;
     position: absolute;
     left: 0;
     top: 100%;
-    margin-top: rhythm(1, $fs-s);
+    margin-top: rhythm(1, $fs-xs);
   }
   > span {
-    @include adjust-font-size-to($fs-s, 3);
+    @include adjust-font-size-to($fs-xs, 3);
     color: $gray;
     position: absolute;
+    font-family: $ff-sg;
     left: 0;
     top: 100%;
-    margin-top: rhythm(4, $fs-s);
+    margin-top: rhythm(4, $fs-xs);
   }
 }
 
-div.styleguide-color-main {
+.sg-color-main {
   z-index: 100;
   &:after {
     content: "";
@@ -112,7 +122,7 @@ div.styleguide-color-main {
     content:"KEY";
     @include adjust-font-size-to($fs-xs);
     color: $white;
-    font-family: $ff-styleguide;
+    font-family: $ff-sg;
     position: absolute;
     right: 0;
     bottom: 0;

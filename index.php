@@ -5,42 +5,44 @@
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
   <title>StyleGuide</title>
-  <script type="text/javascript" src="//use.typekit.net/mfg3jbg.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <link rel="stylesheet" href="../css/screen.css">
-  <link rel="stylesheet" href="../css/styleguide.css">
+  <link rel="stylesheet" href="css/styleguide.css">
 </head>
 
-<body class="styleguide">
-  <div class="l--constrained">
-    <h1 class="styleguide">Style Guide</h1>
-    <section class="styleguide">
-      <h2 class="styleguide">Colors</h2>
-      <article class="styleguide">
-        <header class="styleguide">
-          <h3 class="styleguide">Primary</h3>
+<body class="sg">
+  <div class="sg--constrained">
+    <h1 class="sg-title">Style Guide</h1>
+    <section class="sg-section">
+      <h2 class="sg-section-title">Colors</h2>
+      <article class="sg-item">
+        <header class="sg-item-header">
+          <h3 class="sg-item-title">Primary</h3>
         </header>
-        <div class="styleguide-color" style="background:#e5efeb;"><strong>$teal-white</strong><span>#e5efeb</span></div>
-        <div class="styleguide-color" style="background:#dae8e2;"><strong>$teal-lightest</strong><span>#dae8e2</span></div>
-        <div class="styleguide-color" style="background:#3dd59e;"><strong>$teal-lighter</strong><span>#3dd59e</span></div>
-        <div class="styleguide-color" style="background:#00c584;"><strong>$teal-light</strong><span>#00c584</span></div>
-        <div class="styleguide-color styleguide-color-main" style="background:#01986c;"><strong>$teal</strong><span>#01986c</span></div>
-        <div class="styleguide-color" style="background:#017864;"><strong>$teal-dark</strong><span>#017864</span></div>
-        <div class="styleguide-color" style="background:#00585c;"><strong>$teal-darker</strong><span>#00585c</span></div>
-        <div class="styleguide-color" style="background:#001d20;"><strong>$teal-darkest</strong><span>#001d20</span></div>
+        <ul class="sg-palette">
+          <li class="sg-color" style="background:#e5efeb;"><strong>$teal-white</strong><span>#e5efeb</span></li>
+          <li class="sg-color" style="background:#dae8e2;"><strong>$teal-lightest</strong><span>#dae8e2</span></li>
+          <li class="sg-color" style="background:#3dd59e;"><strong>$teal-lighter</strong><span>#3dd59e</span></li>
+          <li class="sg-color" style="background:#00c584;"><strong>$teal-light</strong><span>#00c584</span></li>
+          <li class="sg-color sg-color-main" style="background:#01986c;"><strong>$teal</strong><span>#01986c</span></li>
+          <li class="sg-color" style="background:#017864;"><strong>$teal-dark</strong><span>#017864</span></li>
+          <li class="sg-color" style="background:#00585c;"><strong>$teal-darker</strong><span>#00585c</span></li>
+          <li class="sg-color" style="background:#001d20;"><strong>$teal-darkest</strong><span>#001d20</span></li>
+        </ul>
       </article>
-      <article class="styleguide">
-        <header class="styleguide">
-          <h3 class="styleguide">Secondary</h3>
+      <article class="sg-item">
+        <header class="sg-item-header">
+          <h3 class="sg-item-title">Secondary</h3>
         </header>
-        <div class="styleguide-color styleguide-color-main" style="background:#50625c;"><strong>$gray-green</strong><span>#50625c</span></div>
+        <ul class="sg-palette">
+          <li class="sg-color sg-color-main" style="background:#50625c;"><strong>$gray-green</strong><span>#50625c</span></li>
+        </ul>
       </article>
     </section>
-    <section class="styleguide">
-      <h2 class="styleguide">Typography</h2>
-      <article class="styleguide">
-        <header class="styleguide">
-          <h3 class="styleguide">Headings</h3>
+    <section class="sg-section">
+      <h2 class="sg-section-title">Typography</h2>
+      <article class="sg-item">
+        <header class="sg-item-header">
+          <h3 class="sg-item-title">Headings</h3>
         </header>
         <h1>Heading 1 with a <a href="#">link</a></h1>
         <h2>Heading 2 with a <a href="#">link</a></h2>
