@@ -22,7 +22,7 @@ body.sg {
   padding-bottom: rhythm(10);
   padding-top: rhythm(10);
   max-width: 1200px;
-  width: 94%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@ h1.sg-title,
 h2.sg-section-title,
 h3.sg-item-title,
 h4.sg-element-title,
-h5.sg,
+h5.sg-element-column-title,
 h6.sg {
   font-family: $ff-sg;
   margin-top: 0;
@@ -99,9 +99,27 @@ h4.sg-element-title {
   text-transform: uppercase;
 }
 
+.sg-element-column {
+  text-align: center;
+  @include breakpoint(800px, $no-query: '.lt-ie9') {
+    float: left;
+    width: 50%;
+  }
+  @include breakpoint(1000px, $no-query: '.lt-ie9') {
+    width: 25%;
+  }
+}
 
-
-
+h5.sg-element-column-title {
+  @include adjust-font-size-to($fs-xs, 3);
+  margin: 0;
+  // margin-top: -(rhythm(3, $fs-xs));
+  // padding-top: rhythm(5, $fs-xs);
+  color: $gray;
+  font-weight: normal;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
 
 //  Colors
 //  --------------------------------------------------
@@ -122,33 +140,33 @@ h4.sg-element-title {
   margin-bottom: 1px;
 
   > strong {
-    @include adjust-font-size-to($fs-xs, 3);
+    @include adjust-font-size-to($fs-xxs, 3);
     color: $gray-dark;
     font-weight: bold;
     font-family: $ff-sg;
     position: absolute;
     left: 60px;
     top: 0;
-    margin-top: rhythm(1, $fs-xs);
+    margin-top: rhythm(1, $fs-xxs);
     white-space: nowrap;
   }
 
   > span {
-    @include adjust-font-size-to($fs-xs, 3);
+    @include adjust-font-size-to($fs-xxs, 3);
     color: $gray;
     position: absolute;
     font-family: $ff-sg;
     left: 60px;
     top: 0;
-    margin-top: rhythm(4, $fs-xs);
+    margin-top: rhythm(4, $fs-xxs);
     white-space: nowrap;
   }
 
   @include breakpoint(800px, $no-query: '.lt-ie9') {
     float: left;
     margin-bottom: rhythm(8);
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
 
     > strong {
       left: 0;
@@ -216,3 +234,12 @@ h4.sg-element-title {
   }
 }
 
+//  Images
+//  --------------------------------------------------
+
+//  Image
+
+img {
+  max-width: 100%;
+  width: auto;
+}
