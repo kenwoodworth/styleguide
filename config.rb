@@ -1,6 +1,5 @@
 # Compass plugins
 require 'breakpoint'
-require 'singularitygs'
 require 'sass-globbing'
 
 http_path = "/"
