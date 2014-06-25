@@ -93,10 +93,19 @@ h3.sg-item-title {
   }
 }
 
+.sg-element-tight {
+  @include breakpoint(800px, $no-query: '.lt-ie9') {
+    padding-top: rhythm(5);
+  }
+}
+
 h4.sg-element-title {
   @include adjust-font-size-to($fs-s);
   color: $gray;
   text-transform: uppercase;
+  @include breakpoint(800px, $no-query: '.lt-ie9') {
+    margin-bottom: 0;
+  }
 }
 
 .sg-element-column {
