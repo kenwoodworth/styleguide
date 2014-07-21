@@ -152,7 +152,7 @@
         <div class="sg-element">
           <h4 class="sg-element-title">Ordered List</h4>
           <ol>
-            <li>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</li>
+            <li>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis.</li>
             <li>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</li>
             <li>Ut in nulla enim.</li>
             <li>Phasellus molestie magna non est bibendum non.</li>
@@ -161,7 +161,7 @@
         <div class="sg-element">
           <h4 class="sg-element-title">Unordered List</h4>
           <ul>
-            <li>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</li>
+            <li>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis.</li>
             <li>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</li>
             <li>Ut in nulla enim.</li>
             <li>Phasellus molestie magna non est bibendum non.</li>
@@ -171,7 +171,7 @@
           <h4 class="sg-element-title">Definition List</h4>
           <dl>
             <dt>Definition 1</dt>
-            <dd>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</dd>
+            <dd>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis.</dd>
             <dt>Definition 2</dt>
             <dd>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</dd>
             <dt>Definition 3</dt>

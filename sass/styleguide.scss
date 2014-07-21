@@ -26,16 +26,18 @@ body.sg {
   margin: 0 auto;
 }
 
-.sg-title,
-.sg-section-title,
-.sg-item-title,
-.sg-element-title,
-.sg-element-column-title {
+h1.sg-title,
+h2.sg-section-title,
+h3.sg-item-title,
+h4.sg-element-title,
+h5.sg-element-column-title {
+  color: $gray-dark;
   font-family: $ff-sg;
+  font-weight: bold;
   margin-top: 0;
 }
 
-.sg-title {
+h1.sg-title {
   color: $gray-darker;
   @include adjust-font-size-to($fs-xxxxxl);
   margin: 0 rhythm(5, $fs-xxxxxl) rhythm(10, $fs-xxxxxl);
@@ -51,7 +53,7 @@ body.sg {
   margin-top: rhythm(10);
 }
 
-.sg-section-title {
+h2.sg-section-title {
   @include adjust-font-size-to($fs-h2);
   background: $gray-white;
   border-bottom: 1px solid $gray-white;
@@ -71,7 +73,7 @@ body.sg {
   border-bottom: 1px dotted $gray;
 }
 
-.sg-item-title {
+h3.sg-item-title {
   @include adjust-font-size-to($fs-l);
   background: $white;
   margin: 0;
@@ -98,7 +100,7 @@ body.sg {
   }
 }
 
-.sg-element-title {
+h4.sg-element-title {
   @include adjust-font-size-to($fs-s);
   color: $gray;
   text-transform: uppercase;
@@ -118,7 +120,7 @@ body.sg {
   }
 }
 
-.sg-element-column-title {
+h5.sg-element-column-title {
   @include adjust-font-size-to($fs-xs, 3);
   margin: 0;
   color: $gray;
@@ -139,6 +141,7 @@ body.sg {
 }
 
 .sg-color {
+  background-image: none;
   position: relative;
 
   height: 42px;
